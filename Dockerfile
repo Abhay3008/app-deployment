@@ -10,7 +10,7 @@ WORKDIR TASKAPP
 # copying files to working directory
 COPY task_app/ .
 
-# installing requirements
+
 #RUN pip3 install -r requirements.txt
 
 #Exposing the application port 
