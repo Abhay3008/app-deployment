@@ -1,5 +1,5 @@
 # selecting python as base image
-FROM python:3.9
+FROM centos:latest
 
 # creating working directory
 RUN mkdir TASKAPP
