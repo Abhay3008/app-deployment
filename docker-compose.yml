@@ -1,0 +1,15 @@
+version: '3'
+services:
+  web:
+    image: web
+    build: ./webapp
+    container_name: apache_web
+    ports:
+      - "8632:80"
+    volumes:
+      - type: bind
+        source: ./content
+        target: /var/www/html
+            #- /content:/var/www/html
+        #    privileged: true
+        #restart: always
